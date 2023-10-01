@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0089B5;
+    overflow: hidden;
+}
+
+.logo{
+    position: fixed;
+    display: flex;
+    left: calc(50% - 256px);
+    top: 40px;
+}
+
+.inicio{
+    width: 100%;
+    height: calc(100% - 80px);
+    background-image: url("https://acortar.link/S0HRoO");
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow: auto;
+
+    .inicio_Caja{
+        width: 410px;
+
+        .sesion{
+            width: 410px;
+            /*height: 450px;*/
+            position: relative;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 280px;
+
+            .titulo{
+                height: 50px;
+                color: #0089B5;
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 24px;
+                margin-bottom: 0;
+            }
+
+            .formulario{
+                width: 362px;
+            /*height: 500px;*/
+                /*        T  R   B    L       */
+                margin: 0 24px 24px 24px;
+            /*background: #FFBE00;*/
+
+                .titleInput{
+                    width: 100%;
+                    height: 32px;
+                    margin: 10px 8px 5px 8px;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    color: black;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .input{
+                    width: 346px;
+                    height: 40px;
+                    margin: 0 8px 8px 8px;
+                    border-radius: 5px;
+                    border: 1px solid rgba(0, 0, 0, 30%);
+                    box-sizing: border-box;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                .input:focus{
+                    outline: none;
+                }
+
+                .input::placeholder{
+                    color: rgba(0, 0, 0, 30%);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                .olvidar{
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.5);
+                    margin-left: 8px;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                }
+
+                .olvidar:hover{
+                    color: black;
+                }
+
+                .nombre{
+                    margin-top: 20px;
+                }
+
+                .recuerdame{
+                    margin-top: 40px;
+                    margin-left: 8px;
+                }
+
+                .cursor{
+                    cursor: pointer;
+                }
+
+                .recordarLable{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    color: black;
+                }
+
+                .btnIniciar{
+                    width: 346px;
+                    height: 45px;
+                    background-color: #0089B5;
+                    color: white;
+                    font-family: 'Poppins', sans-serif;
+                    border-radius: 5px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border: none;
+                }
+
+                .btnIniciar:hover{
+                    background-color: #006787;
+                }
+
+            }
+        }
+
+        .sinCuenta{
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            font-weight: normal;
+            width: 410px;
+            min-height: 90px;
+
+            .registrarse{
+                cursor: pointer;
+                font-weight: bold;
+                text-decoration: none;
+                color: white;
+                transition: color 0.5s;
+            }
+
+            .registrarse:hover{
+                color: black;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerL{
+    padding-left: 50px;
+
+    .elaborado{
+        width: 200px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+.footerR{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 50px;
+    font-size: 16px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.requireds{
+    width: 100%;
+    height: 32px;
+    margin: -8px 8px 5px 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: red;
+}
+
+.requerido{
+    margin-bottom: 10px;
+}
+
+.ojo{
+    position: relative;
+
+    .ver{
+        position: absolute;
+        top: 7px;
+        right: 20px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 734px) {
+    footer{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footerL{
+        justify-content: center;
+        padding-left: 0;
+    }
+
+
+    .footerR{
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-height: 861px) {
+    .logo{
+        top: 0px;
+    }
+
+    .inicio{
+        background-image: none;
+    }
+
+    .sesion{
+        margin-top: 200px !important;
+    }
+}
