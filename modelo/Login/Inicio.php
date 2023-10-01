@@ -1,6 +1,5 @@
 <?php
 include 'Connection.php';
-
     $correo = $_POST['correo'];
 
     $contrasena = $_POST['contrasena'];
@@ -9,11 +8,10 @@ include 'Connection.php';
         and Contrasena = '$contrasena'");
 
     if (mysqli_num_rows($validar_login) > 0){
-        /*header("location: ../Inicio/index.html");*/
         echo '
                 <script>
                     alert ("Si entraste");
-                    window.location = "../../index.php";
+                    window.location = "../../vista/Inicio/Index.html";
                 </script>
             ';
         exit;
