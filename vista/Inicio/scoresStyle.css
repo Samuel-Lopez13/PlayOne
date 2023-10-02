@@ -1,0 +1,56 @@
+.scores{
+    display: none;
+}
+
+.encabezado{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.part1_1{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btnRegresar{
+        font-size: 50px;
+        font-weight: bolder;
+        color: white;
+        background-color: #152953;
+        border: none;
+    }
+}
+
+.part1_2{
+    width: 53%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .textScore{
+        font-family: 'Baloo Bhai 2', cursive;
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.part1_3{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-right: 20px;
+
+    .btnCerrar{
+        font-size: 24px;
+    }
+}

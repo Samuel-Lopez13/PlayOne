@@ -16,7 +16,7 @@
             <div class="registrar d-flex flex-column">
                 <h1 class="titulo text-center">Crear cuenta</h1>
                 <div class="formulario">
-                    <form action="../../modelo/Registrarte/Registro.php" method="POST">
+                    <form action="../../controlador/Registrarte/RegistrarteController.php" method="POST">
                         <div class="correo">
                             <label class="titleInput">Correo Electronico</label>
                             <input type="text" class="input" name="correo" placeholder="Ingresa tu correo electronico">

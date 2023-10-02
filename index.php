@@ -17,7 +17,7 @@
                 <div class="sesion d-flex flex-column">
                     <h1 class="titulo text-center">Bienvenido</h1>
                     <div class="formulario">
-                        <form action="modelo/Login/Inicio.php" method="POST">
+                        <form action="controlador/Login/LoginController.php" method="POST">
                             <div class="nombre">
                                 <label class="titleInput">Correo electrónico</label>
                                 <input type="text" class="input" name="correo" placeholder="Ingresa tu correo electrónico">

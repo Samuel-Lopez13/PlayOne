@@ -1,27 +1,19 @@
 <?php
-include 'Connection.php';
-    $correo = $_POST['correo'];
+    class ModeloLogin{
+        private $conn;
 
-    $contrasena = $_POST['contrasena'];
+        public function __construct($conn)
+        {
+            $this->conn = $conn;
+        }
 
-    $validar_login = mysqli_query($conn,"SELECT * FROM usuarios WHERE Correo = '$correo' 
-        and Contrasena = '$contrasena'");
+        public function loginValidation($correo, $contrasena){
+            $query = "SELECT * FROM usuarios WHERE Correo = '$correo'
+                    and Contrasena = '$contrasena'";
 
-    if (mysqli_num_rows($validar_login) > 0){
-        echo '
-                <script>
-                    alert ("Si entraste");
-                    window.location = "../../vista/Inicio/Index.html";
-                </script>
-            ';
-        exit;
-    } else{
-        echo '
-                <script>
-                    alert ("Usuario no existente, verifique los datos");
-                    window.location = "../index.php";
-                </script>
-            ';
-        exit;
+            $result = mysqli_query($this->conn, $query);
+
+            return mysqli_num_rows($result) > 0;
+        }
     }
 ?>

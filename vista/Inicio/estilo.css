@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.infoPerfil{
+    display: block;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #243a69 35.94%, #6d6190);
+    overflow: auto;
+}
+
+/*  NavBar  */
+
+.playOne {
+    margin-left: 30px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: var(--font-audiowide);
+    letter-spacing: 2px;
+}
+
+.playOne span {
+    font-size: 40px;
+    color: #A0C55F;
+}
+
+.navbar {
+    width: 100%;
+    height: 140px;
+    background-color: #152953;
+}
+
+.buttonNav{
+    margin-right: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenPerfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.contenedor1{
+    width: 100%;
+    height: 200px;
+    display: flex;
+
+    .part1_1{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+        .imagenLogo{
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+        }
+    }
+
+    .part1_2{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: flex-start;
+        margin-top: 30px;
+        margin-right: 10px;
+
+        .btnCerrar{
+            font-size: 24px;
+        }
+    }
+}
+
+/*-----------------------------*/
+
+h3, h5{
+    margin: 0;
+}
+
+.infoUser{
+    padding: 10px 30px 20px 30px;
+    border-bottom: 3px solid #D3D3D3;
+}
+
+.user_user{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+}
+
+.correo_correo{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+}
+
+/*  lista  */
+
+.lista{
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.iconoList{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.textList{
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.list:hover > .textList{
+    color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+/*  info    */
+
+.info{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .info_itulo {
+        font-size: 90px;
+        padding: 15px 0;
+        font-family: var(--font-audiowide);
+        color: #fff;
+        text-align: center;
+    }
+
+    .info_descripcion {
+        font-size: 1.1rem;
+        margin: 0;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #fff;
+    }
+}
+
+.games{
+    width: 100%;
+    height: calc(100% - 390px);
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+    .hoverGame{
+        display: flex;
+        opacity: 0;
+        position: absolute;
+        width: 120px;
+        height: 50px;
+        top: calc(50% - 25px);
+        left: calc(50% - 60px);
+        background-color: #7AB317;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        transition: opacity .5s, background-color .7s;
+
+        .botonGame{
+            text-decoration: none;
+            color: white;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+    }
+
+    .game1{
+        width: 300px;
+        height: 380px;
+        background-color: #7AB317;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contenedorGame1{
+            width: 240px;
+            height: 280px;
+            margin-top: 30px;
+            border-radius: 5px;
+            background-color: #B8D47B;
+            position: relative;
+
+            .imagenGame1{
+                width: 240px;
+                height: 280px;
+                border-radius: 10px;
+            }
+        }
+
+        .contenedorTitleGame1{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .tituloGame1{
+                margin: 0;
+                font-family: var(--font-audiowide);
+                font-size: 30px;
+                font-weight: 500;
+                color: white;
+            }
+        }
+    }
+
+    .game1:hover > .contenedorGame1 .hoverGame{
+        opacity: 1;
+    }
+
+    .hoverGame:hover{
+        cursor: pointer;
+        background-color: rgba(122, 179, 23, 0.8);
+    }
+
+    .hoverGame2:hover{
+        background-color: rgba(42, 4, 74, 0.8) !important;
+    }
+
+    .hoverGame3:hover{
+        background-color: rgba(92, 101, 192, 0.8) !important;
+    }
+
+    .hoverGame4:hover{
+        background-color: rgba(173, 43, 173, 0.8) !important;
+    }
+}
+
+
+:root {
+    /* fonts */
+    --font-audiowide: Audiowide;
+
+    /* Colors */
+    --color-white: #fff;
+
+    /* Border radiuses */
+    --br-6xl: 25px;
+}
