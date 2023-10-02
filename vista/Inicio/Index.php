@@ -68,7 +68,7 @@
                                 <ion-icon class="iconoList" name="create-outline"></ion-icon>
                                 <h5 class="textList">Edit profile</h5>
                             </div>
-                            <div class="list">
+                            <div class="list" id="score">
                                 <ion-icon class="iconoList" name="ribbon-outline"></ion-icon>
                                 <h5 class="textList">Scores</h5>
                             </div>
@@ -88,7 +88,7 @@
                     <div class="scores">
                         <div class="encabezado">
                             <div class="part1_1">
-                                <ion-icon class="btnRegresar" name="chevron-back-outline"></ion-icon>
+                                <ion-icon class="btnRegresar" id="regresarScore" name="chevron-back-outline"></ion-icon>
                             </div>
                             <div class="part1_2">
                                 <h4 class="textScore">Score</h4>
@@ -160,6 +160,8 @@
             </section>
         </div>
     </div>
+
+    <script src="Vista.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

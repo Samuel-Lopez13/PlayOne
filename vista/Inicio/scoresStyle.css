@@ -11,6 +11,7 @@
 .part1_1{
     width: 33%;
     height: 100%;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +23,10 @@
         background-color: #152953;
         border: none;
     }
+}
+
+.part1_1:hover > .btnRegresar{
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .part1_2{
