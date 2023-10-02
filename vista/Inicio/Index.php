@@ -94,10 +94,44 @@
                                 <h4 class="textScore">Score</h4>
                             </div>
                             <div class="part1_3">
-                                <button type="button" class="btnCerrar btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <button type="button" id="cerrarbtn" class="btnCerrar btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="perfilScores">
+                            <div class="logoPerfil">
+                                <img class="imagenLogo" src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png">
+                            </div>
+                            <div class="usuarioScores">
+                                <h3 class="usuarioScores_h3">Samuel Lopez</h3>
+                            </div>
+                        </div>
+                        <div class="gamesWon">
+                            <div class="gamesTitle">
+                                <h3 class="usuarioSco">Games Won</h3>
+                            </div>
+                            <div class="gamesFull">
+                                <div class="textGames">
+                                    <h5 class="textGames_h5">Hangman</h5>
+                                    <h6 class="pointGames">1</h6>
+                                </div>
+                                <div class="textGames">
+                                    <h5 class="textGames_h5">Crossword</h5>
+                                    <h6 class="pointGames">3</h6>
+                                </div>
+                                <div class="textGames">
+                                    <h5 class="textGames_h5">Word Search</h5>
+                                    <h6 class="pointGames">4</h6>
+                                </div>
+                                <div class="textGames">
+                                    <h5 class="textGames_h5">Memory</h5>
+                                    <h6 class="pointGames">3</h6>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!--    Escore        -->
+
                 </div>
             </div>
         </nav>
