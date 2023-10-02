@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     include "../Connection.php";
     include "../../modelo/Login/Inicio.php";
 
@@ -9,8 +11,8 @@
     $isValid = $loginModel->loginValidation($correo, $contrasena);
 
     if($isValid){
-        setcookie("correo", $correo, time() + 3600);
-        setcookie("contrasena", $contrasena, time() + 3600);
+        $_SESSION['correo'] = $correo;
+
         header("Location: ../../vista/Inicio/Index.php");
     } else{
         echo '

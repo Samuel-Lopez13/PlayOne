@@ -30,18 +30,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <?php
+    // Incluir el archivo PHP
+        include "../../../playone/controlador/Inicio/ObtenerDatosController.php";
+    ?>
+
     <div class="contenedor">
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid principal">
                 <p class="playOne"> <span>Play</span>One</p>
                 <button class="buttonNav navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                    <img class="imagenPerfil" src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png">
+                    <img class="imagenPerfil" src="<?php echo $icono; ?>">
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="background-color: #152953">
                     <div class="infoPerfil">
                         <div class="contenedor1 offcanvas-header">
                             <div class="part1_1">
-                                <img class="imagenLogo" src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png">
+                                <img class="imagenLogo" src="<?php echo $icono; ?>">
                             </div>
                             <div class="part1_2">
                                 <button type="button" class="btnCerrar btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -50,12 +55,12 @@
                         <div class="infoUser">
                             <div class="user">
                                 <h3 class="user_user">
-                                    JossmarKu
+                                    <?php echo $UserName; ?>
                                 </h3>
                             </div>
                             <div class="correo">
                                 <h3 class="correo_correo">
-                                    JossmarKu@gmail.com
+                                    <?php echo $correo; ?>
                                 </h3>
                             </div>
                         </div>
