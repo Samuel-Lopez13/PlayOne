@@ -1,0 +1,137 @@
+.profile{
+    display: none;
+}
+
+.encabezadoP{
+    width: 100%;
+    height: 100px;
+    padding: 30px 30px 10px 30px;
+    display: flex;
+}
+
+    .fotoContent{
+        width: 100%;
+        height: 220px;
+        padding: 0 30px 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        .imagenPerfilP{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    }
+
+.nombreCuenta{
+    width: 100%;
+    height: 70px;
+    padding: 10px 30px 20px 30px;
+    display: flex;
+    justify-content: start;
+    border-bottom: 3px solid #D3D3D3;
+}
+
+
+.textProfile{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.stats{
+    width: 100%;
+    height: 405px;
+    padding: 20px 30px 20px 30px;
+
+    .tituloS{
+        width: 100%;
+        height: 50px;
+        .textStats{
+            display: flex;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    .tablaStats{
+        width: 100%;
+        height: 290px;
+        border-radius: 30px;
+        background-color: #243A69;
+        display: flex;
+
+        .iconStats{
+            width: 100px;
+            height: 100%;
+            padding: 10px 25px 10px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .margin{
+                margin-bottom: 10px;
+            }
+            .icon{
+                width: 60px;
+                height: 60px;
+                color: #D3D3D3;
+            }
+        }
+
+        .nameStats{
+            width: 176px;
+            height: 100%;
+            padding: 10px 0 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .marginS{
+                margin-bottom: 10px;
+            }
+
+            .nameS{
+                width: 146px;
+                height: 60px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: #FFFFFF;
+                font-family: 'Baloo Bhai 2', cursive;
+            }
+        }
+
+        .timeStats{
+            width: 112px;
+            height: 100%;
+            padding: 10px 0 10px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .marginT{
+                margin-bottom: 10px;
+            }
+            .nameT{
+                width: 100%;
+                height: 60px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: #FFDB58;
+                font-family: 'Baloo Bhai 2', cursive;
+            }
+        }
+    }
+}

@@ -60,5 +60,17 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        // Verifica si la cookie 'correo' existe
+        if (document.cookie.indexOf('correo=') !== -1) {
+            // Si existe, envía el formulario de inicio de sesión automáticamente
+            const form = document.querySelector('form');
+            console.log("entre");
+            form.submit();
+        } else{
+            console.log("no entre")
+        }
+    </script>
 </body>
 </html>

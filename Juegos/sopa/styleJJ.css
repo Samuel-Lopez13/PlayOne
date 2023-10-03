@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bungee', cursive;
+}
+
+.container {
+    width: 760px;
+    margin: 60px auto;
+}
+
+.name {
+    text-align: center;
+}
+
+.h1-1 {
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+span {
+    font-size: 35px;
+    color: #2487FF;
+}
+
+.h1-2 {
+    font-size: 55px;
+    letter-spacing: 4px;
+    color: #dd1f62;
+}
+
+img {
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+    height: auto;
+}
+
+.start {
+    text-align: center;
+}
+
+.start a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.start a:visited {
+    color: #000000;
+}
+
+.flecha {
+    position: absolute;
+
+}
+
+.flecha img {
+    width: 70px;
+    height: auto;
+}
+
+.objetivo {
+    margin-top: 20px;
+}
+
+.objetivo h2 {
+    font-size: 15px;
+}
+
+.objetivo p {
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+.name-juego {
+    font-size: 13px;
+}
+
+.reglas {
+    margin-top: 20px;
+}
+
+.reglas h2 {
+    font-size: 15px;
+}
+
+.reglas ol {
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+.span-1 {
+    color: #dd1f62;
+    font-size: 11px;
+}
+
+.start-1 {
+    margin-top: 40px;
+}
+
+.start-1 a {
+    font-size: 42px;
+}

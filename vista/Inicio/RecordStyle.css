@@ -1,4 +1,9 @@
-.scores{
+.cardRecord{
+    display: block;
+}
+.record{
+    width: 100%;
+    padding: 0 30px 0 30px;
     display: none;
 }
 
@@ -36,7 +41,7 @@
     justify-content: center;
     align-items: center;
 
-    .textScore{
+    .textRecords{
         font-family: 'Baloo Bhai 2', cursive;
         font-size: 32px;
         font-weight: bold;
@@ -60,86 +65,68 @@
     }
 }
 
-.perfilScores{
+.cardRecord{
     width: 100%;
-    height: 290px;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 3px solid #D3D3D3;
-
-    .logoPerfil{
-        height: 180px;
-        padding: 0px 20px 0 30px;
-        display: flex;
-        align-items: center;
-
-        .imagenLogo{
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-        }
-    }
-
-    .usuarioScores{
-        height: 70px;
-        display: flex;
-        align-items: center;
-
-        .usuarioScores_h3{
-            margin: 0;
-            font-weight: 500;
-            font-size: 40px;
-            padding-left: 30px;
-            font-family: 'Baloo Bhai 2', cursive;
-            color: white;
-        }
-    }
-}
-
-.gamesWon{
-    width: 100%;
-    padding: 0 30px 0 30px;
-
-    .gamesTitle{
-        padding-top: 20px;
-        height: 80px;
-
-        .usuarioSco{
-            color: white;
-        }
-    }
-}
-
-.gamesFull{
-    width: 100%;
-    height: auto;
+    height: 215px;
     background-color: #243A69;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px 25px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 15px;
 
-    .textGames{
-        height: 40px;
+    .textGamesTitle{
+        height: 60px;
         display: flex;
         align-items: center;
 
-        .textGames_h5{
-            width: 70%;
+        .textRecord_h4 {
             font-family: 'Baloo Bhai 2', cursive;
-            font-size: 24px;
+            font-size: 40px;
             font-weight: 400;
             color: white;
             margin: 0;
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .textGames{
+        height: 60px;
+        display: flex;
+        align-items: center;
+
+        .iconM{
+            width: 40px;
+            height: 60px;
+            color: #D3D3D3;
         }
 
-        .pointGames{
+        .textRecord_h5{
+            width: 70%;
             font-family: 'Baloo Bhai 2', cursive;
-            font-size: 24px;
+            font-size: 32px;
             font-weight: 400;
             color: #FFDB58;
             margin: 0;
+        }
+
+        .textRecord_h5N{
+            width: 70%;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 32px;
+            font-weight: 400;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .pointGamesWon_h6{
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 32px;
+            font-weight: 400;
+            color: #FFDB58;
+            margin: 0;
+            justify-content: end;
         }
     }
 }

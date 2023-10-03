@@ -12,6 +12,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="scoresStyle.css">
+    <link rel="stylesheet" href="editProfile.css">
+    <link rel="stylesheet" href="profileStyle.css">
+    <link rel="stylesheet" href="RecordStyle.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,11 +68,11 @@
                             </div>
                         </div>
                         <div class="lista">
-                            <div class="list">
+                            <div class="list" id="perfil">
                                 <ion-icon class="iconoList" name="person-outline"></ion-icon>
                                 <h5 class="textList">My Profile</h5>
                             </div>
-                            <div class="list">
+                            <div class="list" id="editar">
                                 <ion-icon class="iconoList" name="create-outline"></ion-icon>
                                 <h5 class="textList">Edit profile</h5>
                             </div>
@@ -77,7 +80,7 @@
                                 <ion-icon class="iconoList" name="ribbon-outline"></ion-icon>
                                 <h5 class="textList">Scores</h5>
                             </div>
-                            <div class="list">
+                            <div class="list" id="record">
                                 <ion-icon class="iconoList" name="trophy-outline"></ion-icon>
                                 <h5 class="textList">Records</h5>
                             </div>
@@ -87,6 +90,99 @@
                             </div>
                         </div>
                     </div>
+
+                    <!--    Profile  -->
+
+                    <div class="profile">
+                        <div class="encabezado">
+                            <div class="part1_1">
+                                <ion-icon class="btnRegresar" id="regresarProfile" name="chevron-back-outline"></ion-icon>
+                            </div>
+                            <div class="part1_2">
+                                <h4 class="textScore">Profile</h4>
+                            </div>
+                            <div class="part1_3">
+                                <button type="button" id="cerrarbtnProfile" class="btnCerrar btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="fotoContent">
+                            <img  class="imagenPerfilP" src="<?php echo $icono; ?>">
+                        </div>
+                        <div class="nombreCuenta">
+                            <h4 class="textProfile"><?php echo $UserName; ?></h4>
+                        </div>
+                        <div class="stats">
+                            <div class="tituloS">
+                                <h4 class="textStats">Stats</h4>
+                            </div>
+                            <div class="tablaStats">
+                                <div class="iconStats">
+                                    <ion-icon class="icon margin" name="game-controller-outline"></ion-icon>
+                                    <ion-icon class="icon margin" name="calendar-outline"></ion-icon>
+                                    <ion-icon class="icon margin" name="time-outline"></ion-icon>
+                                    <ion-icon class="icon" name="flame-outline"></ion-icon>
+                                </div>
+                                <div class="nameStats">
+                                    <h5 class="nameS marginS">Games Played</h5>
+                                    <h5 class="nameS marginS">Member Since</h5>
+                                    <h5 class="nameS marginS">Time Played</h5>
+                                    <h5 class="nameS">Playstreak</h5>
+                                </div>
+                                <div class="timeStats">
+                                    <h5 class="nameT marginT">0</h5>
+                                    <h5 class="nameT marginT">0 days</h5>
+                                    <h5 class="nameT marginT">0 hours</h5>
+                                    <h5 class="nameT">0 days</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--    Profile  -->
+
+                    <!--    Edit Profile        -->
+
+                    <div class="edit">
+                        <div class="encabezadoEdit">
+                            <div class="part1_1">
+                                <ion-icon class="btnRegresar" id="regresarEdit" name="chevron-back-outline"></ion-icon>
+                            </div>
+                            <div class="part1_2">
+                                <h4 class="textEdit">Edit your Profile</h4>
+                            </div>
+                            <div class="part1_3">
+                                <button type="button" id="cerrarbtnEdit" class="btnCerrar btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="informacion">
+                            <div class="icono-camara icon-cam">
+                                <div class="circulo-inf">
+                                    <i class="bi bi-camera cam"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userName">
+                            <div class="user">
+                                <h4 class="userName_user">
+                                    Username
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="EditUsername">
+                            <div class="usuario">
+                                <h3>
+                                    <?php echo $UserName; ?>
+                                </h3>
+                            </div>
+                            <div class="editUsuario">
+                                <h3>
+                                    Edit
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--    Edit Profile        -->
 
                     <!--    Escore        -->
 
@@ -104,10 +200,10 @@
                         </div>
                         <div class="perfilScores">
                             <div class="logoPerfil">
-                                <img class="imagenLogo" src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png">
+                                <img class="imagenLogo" src="<?php echo $icono; ?>">
                             </div>
                             <div class="usuarioScores">
-                                <h3 class="usuarioScores_h3">Samuel Lopez</h3>
+                                <h3 class="usuarioScores_h3"><?php echo $UserName; ?></h3>
                             </div>
                         </div>
                         <div class="gamesWon">
@@ -137,6 +233,71 @@
 
                     <!--    Escore        -->
 
+                    <!--    record        -->
+                    <div class="record">
+                        <div class="encabezado">
+                            <div class="part1_1">
+                                <ion-icon class="btnRegresar" id="regresarrecord" name="chevron-back-outline"></ion-icon>
+                            </div>
+                            <div class="part1_2">
+                                <h4 class="textRecords">Record</h4>
+                            </div>
+                            <div class="part1_3">
+                                <button type="button" id="cerrarbtnrecord" class="btnCerrar btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="Records">
+
+                            <div class="cardRecord">
+                                <div class="textRecord">
+                                    <div class="textGamesTitle">
+                                        <h4 class="textRecord_h4">Memory Game</h4>
+                                    </div>
+                                    <div class="textGames">
+                                        <h5 class="textRecord_h5N">Samuel Lopez</h5>
+                                    </div>
+                                    <div class="textGames">
+                                        <ion-icon class="iconM" name="trophy-outline"></ion-icon>
+                                        <h5 class="textRecord_h5">Games Won</h5>
+                                        <h6 class="pointGamesWon_h6">-50</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardRecord">
+                                <div class="textRecord">
+                                    <div class="textGamesTitle">
+                                        <h4 class="textRecord_h4">Hangman</h4>
+                                    </div>
+                                    <div class="textGames">
+                                        <h5 class="textRecord_h5N">JossmarKu</h5>
+                                    </div>
+                                    <div class="textGames">
+                                        <ion-icon class="iconM" name="trophy-outline"></ion-icon>
+                                        <h5 class="textRecord_h5">Games Won</h5>
+                                        <h6 class="pointGamesWon_h6">-20</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardRecord">
+                                <div class="textRecord">
+                                    <div class="textGamesTitle">
+                                        <h4 class="textRecord_h4">Crossword</h4>
+                                    </div>
+                                    <div class="textGames">
+                                        <h5 class="textRecord_h5N">Epson Coj</h5>
+                                    </div>
+                                    <div class="textGames">
+                                        <ion-icon class="iconM" name="trophy-outline"></ion-icon>
+                                        <h5 class="textRecord_h5">Games Won</h5>
+                                        <h6 class="pointGamesWon_h6">10000</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -175,7 +336,7 @@
                 <div class="contenedorGame1" style="background-color: #6F95FF">
                     <img src="../../assets/imagenes/Word%20Search.png" class="imagenGame1">
                     <div class="hoverGame hoverGame3" style="background-color: #5C65C0">
-                        <a class="botonGame">
+                        <a class="botonGame" href="../../Juegos/sopa/indexJJ.html">
                             Play
                         </a>
                     </div>
