@@ -141,8 +141,53 @@
                     <!--    Profile  -->
 
                     <!--    Edit Profile        -->
-
                     <div class="edit">
+                        <div class="encabezadoEdit">
+                            <div class="part1_1">
+                                <ion-icon class="btnRegresar" id="regresarEdit" name="chevron-back-outline"></ion-icon>
+                            </div>
+                            <div class="part1_2">
+                                <h4 class="textEdit">Edit your Profile</h4>
+                            </div>
+                            <div class="part1_3">
+                                <button type="button" id="cerrarbtnEdit" class="btnCerrar btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="informacion">
+                            <div class="icono-camara icon-cam">
+                                <div class="circulo-inf">
+                                    <input type="file" name="subir_foto" id="subir_foto" class="subir_foto visually-hidden">
+                                    <label for="subir_foto" class="custom-file-upload">
+                                        <i class="bi bi-camera cam"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="userName">
+                            <div class="user">
+                                <h4 class="userName_user">
+                                    Username
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="EditUsername">
+
+                            <div class="usuario">
+                                <h3>
+                                    <?php echo $UserName; ?>
+                                </h3>
+                            </div>
+                            <div class="editUsuario">
+                                <h3>
+                                    Edit
+                                </h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--<div class="edit">
                         <div class="encabezadoEdit">
                             <div class="part1_1">
                                 <ion-icon class="btnRegresar" id="regresarEdit" name="chevron-back-outline"></ion-icon>
@@ -180,7 +225,7 @@
                                 </h3>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!--    Edit Profile        -->
 
